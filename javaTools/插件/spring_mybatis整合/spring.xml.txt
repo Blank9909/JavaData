@@ -1,0 +1,32 @@
+ <!--开启扫描-->
+    <context:component-scan base-package="com.yjxxt"/>
+    <!--引入jdbc.propertis-->
+    <context:property-placeholder file-encoding="utf-8"
+                                  location="classpath:jdbc.properties"></context:property-placeholder>
+    <!--数据源c3p0-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="user" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!--开启aop-->
+    <aop:aspectj-autoproxy/>
+    <!--事务管理器-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--通知-->
+    <tx:annotation-driven transaction-manager="txManager"></tx:annotation-driven>
+
+
+    <!--sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+    </bean>
+    <!--MapperScanner-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--接口所在位置-->
+        <property name="basePackage" value="com.yjxxt.mapper"></property>
+    </bean>

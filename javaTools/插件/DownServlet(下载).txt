@@ -1,0 +1,5 @@
+// 设置响应类型 (浏览器无法使用某种方式或激活某个程序来处理的类型)
+            resp.setContentType("application/octet-stream");
+            //resp.setContentType("text/html;charset=utf-8");
+            // 设置头信息
+            resp.setHeader("Content-Disposition", "attachment;filename=" + fileName);

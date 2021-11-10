@@ -1,0 +1,75 @@
+ <!--1. Jetty插件-->
+    <plugin>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-maven-plugin</artifactId>
+      <version>9.4.5.v20170502</version>   <!--9.4.33.v20201020-->
+      <configuration>
+        <httpConnector>
+          <port>8000</port><!-- 设置启动的端口号 -->
+        </httpConnector>
+        <webApp>
+          <!-- 可指定当前项目的站点名 -->
+          <contextPath>/test</contextPath>
+        </webApp>
+        <!-- 热部署，每10秒扫描一次 -->
+        <scanIntervalSeconds>10</scanIntervalSeconds>
+      </configuration>
+    </plugin>
+
+
+
+
+
+    <!--2. Tomcat插件-->
+    <!-- 设置在plugins标签中 -->
+    <plugin>
+      <groupId>org.apache.tomcat.maven</groupId>
+      <artifactId>tomcat7-maven-plugin</artifactId>
+      <version>2.1</version>
+      <configuration>
+        <port>8081</port> <!-- 启动端口 默认:8080 -->
+        <path>/test</path> <!-- 项目的站点名，即对外访问路径 -->
+        <uriEncoding>UTF-8</uriEncoding> <!-- 字符集编码 默认：ISO-8859-1 -->
+        <server>tomcat7</server> <!-- 服务器名称 -->
+      </configuration>
+    </plugin>
+
+
+    
+    <!--3.servlet插件-->
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    
+    <!--4.servlet.jsp插件-->
+    <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>2.3.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+<!--JSTL-->
+<dependency>
+<groupId>javax.servlet</groupId>
+<artifactId>javax.servlet-api</artifactId>
+<version>3.1.0</version>
+<scope>provided</scope>
+</dependency>
+<dependency>
+<groupId>org.apache.taglibs</groupId>
+<artifactId>taglibs-standard-impl</artifactId>
+<version>1.2.5</version>
+</dependency>
+<dependency>
+<groupId>javax.servlet.jsp.jstl</groupId>
+<artifactId>jstl-api</artifactId>
+<version>1.2</version>
+</dependency>

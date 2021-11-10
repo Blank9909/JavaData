@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--将表中的名字转化为Javabean的属性名-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 定义类别名 -->
+    <typeAliases>
+        <package name="com.yjxxt.po"/>
+    </typeAliases>
+
+    <!--关联映射文件-->
+    <mappers>
+        <mapper resource="mappers/UserMapper.xml"></mapper>
+    </mappers>
+
+</configuration>

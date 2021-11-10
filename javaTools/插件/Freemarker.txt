@@ -1,0 +1,37 @@
+pom.xml
+ <!-- freemarker的坐标依赖 -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.23</version>
+    </dependency>
+    <!-- servlet-api的坐标依赖 -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+
+
+web.xml
+ <!--freemarker-->
+  <servlet>
+    <servlet-name>freemarker</servlet-name>
+    <servlet-class>freemarker.ext.servlet.FreemarkerServlet</servlet-class>
+    <init-param>
+      <!-- 模板路径 -->
+      <param-name>TemplatePath</param-name>
+      <!-- 默认在webapp目录下查找对应的模板文件 -->
+      <param-value>/</param-value>
+    </init-param>
+    <init-param>
+      <!-- 模板默认的编码：UTF-8 -->
+      <param-name>default_encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>freemarker</servlet-name>
+    <url-pattern>*.ftl</url-pattern>
+  </servlet-mapping>
