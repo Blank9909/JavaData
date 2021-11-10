@@ -1,0 +1,23 @@
+# 度量指标监控与健康检查
+management:
+  endpoints:
+    web:
+      base-path: /actuator    # 访问端点根路径，默认为 /actuator
+      exposure:
+        include: '*'          # 需要开启的端点，值得注意的是即使配置了 '*'，shutdown 端点也不会开启还需要额外配置
+        exclude: env,caches   # 不需要开启的端点
+  endpoint:
+    shutdown:
+      enabled: true           # 开启 shutdown
+    health:
+      show-details: always
+
+
+# 指定服务端的访问地址
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8769
+
+

@@ -1,0 +1,12 @@
+server:
+  port: 8989
+
+
+
+
+spring:
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: Blank0926@163.com
+    password: YSQCGAOXHEXDAZAB

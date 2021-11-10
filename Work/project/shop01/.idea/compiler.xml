@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-rpc-provider" />
+        <module name="shop-sso" />
+        <module name="shop-rpc" />
+        <module name="shop-generator" />
+        <module name="shop-portal" />
+        <module name="shop-mail" />
+        <module name="shop-manager" />
+        <module name="shop-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="shop-rpc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop" options="" />
+      <module name="shop-common" options="-parameters" />
+      <module name="shop-generator" options="-parameters" />
+      <module name="shop-mail" options="-parameters" />
+      <module name="shop-manager" options="-parameters" />
+      <module name="shop-portal" options="-parameters" />
+      <module name="shop-rpc" options="-parameters" />
+      <module name="shop-rpc-provider" options="-parameters" />
+      <module name="shop-sso" options="-parameters" />
+    </option>
+  </component>
+</project>
