@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!---->
+    <title>Title</title>
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script src="layui/layui.js"></script>
+</head>
+<body>
+    <div class="layui-carousel" id="test1" lay-filter="carofilter">
+        <div carousel-item>
+            <div class="pic" style="width: 100%;height: auto"><img src="images/1.jpg"></div>
+            <div class="pic" style="width: 100%;height: auto"><img src="images/2.jpg"></div>
+            <div class="pic" style="width: 100%;height: auto"><img src="images/3.jpg"></div>
+            <div class="pic" style="width: 100%;height: auto"><img src="images/4.jpg"></div>
+            <div class="pic" style="width: 100%;height: auto"><img src="images/5.jpg"></div>
+            <!--class="pic" style="width: 100%;height: auto"-->
+            <!--class="pic" style="width: 100%;height: auto"-->
+            <!--class="pic" style="width: 100%;height: auto"-->
+            <!--class="pic" style="width: 100%;height: auto"-->
+            <!--class="pic" style="width: 100%;height: auto"-->
+        </div>
+    </div>
+    <!-- 条目中可以是任意内容，如：<img src=""> -->
+    <script>
+        /*var b=1920/460;
+        var W = $(window).width();
+        var H = $(window).height();*/
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+                //,height: (W/b).toString()+'px'
+                ,
+            });
+        });
+
+       /* $(window).resize(function () {
+            window.location.reload()
+        })*/
+
+        var carousel = layui.carousel;
+        //触发轮播切换事件
+        carousel.on('change(test1)', function(obj){ //test1来源于对应HTML容器的 lay-filter="test1" 属性值
+            console.log(obj.index); //当前条目的索引
+            console.log(obj.prevIndex); //上一个条目的索引
+            console.log(obj.item); //当前条目的元素对象
+        });
+
+        var ins = carousel.render(options);
+        //重置轮播
+        ins.reload(options);
+    </script>
+
+</body>
+</html>

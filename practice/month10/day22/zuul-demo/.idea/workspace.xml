@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abc83260-a79f-41c8-883f-81b7a8afefcc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\apache-maven-3.8.1\myRep" />
+        <option name="mavenHome" value="F:\apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="11" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1zr48i1WoAG9UMteaUPhmC6hNBc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/product-service/src/main/java/com/yjxxt/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka-server02" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19260204" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java49\practice\month10\day22\zuul-demo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abc83260-a79f-41c8-883f-81b7a8afefcc" name="Default Changelist" comment="" />
+      <created>1634892721214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634892721214</updated>
+      <workItem from="1634892723699" duration="5392000" />
+      <workItem from="1634948822953" duration="4854000" />
+      <workItem from="1635122000823" duration="3802000" />
+      <workItem from="1636357644109" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" width="939" height="728" key="#Project_Structure" timestamp="1634893633001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="249" y="0" width="939" height="728" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1634893633001" />
+    <state x="761" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1634895940092">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="761" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1634895940092" />
+    <state x="770" y="90" key="FileChooserDialogImpl" timestamp="1634893604100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="770" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1634893604100" />
+    <state width="791" height="128" key="GridCell.Tab.0.bottom" timestamp="1634896372121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="791" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634896372121" />
+    <state width="791" height="128" key="GridCell.Tab.0.center" timestamp="1634896372121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="791" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1634896372121" />
+    <state width="791" height="128" key="GridCell.Tab.0.left" timestamp="1634896372121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="791" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1634896372121" />
+    <state width="791" height="128" key="GridCell.Tab.0.right" timestamp="1634896372121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="791" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1634896372121" />
+    <state x="630" y="86" key="NewModule_or_Project.wizard" timestamp="1634893606865">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="630" y="86" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1634893606865" />
+    <state x="4" y="0" key="SettingsEditor" timestamp="1634893724885">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="4" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1634893724885" />
+    <state x="755" y="189" key="chooseDestDirectoryDialog" timestamp="1634895822869">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="755" y="189" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1634895822869" />
+    <state x="435" y="47" width="931" height="679" key="new project wizard" timestamp="1634896281293">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="47" width="931" height="679" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1634896281292" />
+    <state x="682" y="176" key="run.anything.popup" timestamp="1634948993181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="682" y="176" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1634948993181" />
+    <state x="669" y="290" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1635122803698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="669" y="290" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.728@0.0.1366.728" timestamp="1635122803698" />
+  </component>
+</project>
